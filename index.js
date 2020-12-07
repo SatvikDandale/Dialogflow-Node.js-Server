@@ -5,8 +5,8 @@ const cors = require('cors');
 const http = require('http');
 const bodyParser = require('body-parser')
 const app = express();
-const dotenv = require("dotenv")
-dotenv.config();
+// const dotenv = require("dotenv")
+// dotenv.config();
 
 const { SessionsClient, IntentsClient } = require('dialogflow');
 var serviceAccount = {
