@@ -65,7 +65,7 @@ app.get("/getAllIntents", async (req, res) => {
           parent: `projects/${id}/agent`,
         })
         .then((listIntents) => {
-          res.send(listIntents);
+          res.send(listIntents[0]);
         });
     })
     .catch((error) => {
